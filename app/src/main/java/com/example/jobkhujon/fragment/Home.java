@@ -1,6 +1,7 @@
 package com.example.jobkhujon.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
+import com.example.jobkhujon.OnBackPressed;
 import com.example.jobkhujon.R;
 
 import es.dmoral.toasty.Toasty;
@@ -19,7 +21,7 @@ import es.dmoral.toasty.Toasty;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Home extends Fragment {
+public class Home extends Fragment implements OnBackPressed {
 
 CardView cardView;
     public Home() {
@@ -44,6 +46,15 @@ CardView cardView;
       //  elv.setAdapter(new SavedTabsListAdapter());
         return v;
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
+    }
+
     public class SavedTabsListAdapter extends BaseExpandableListAdapter {
 
         private String[] groups = {};

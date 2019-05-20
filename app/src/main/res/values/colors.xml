@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#009CD6</color>
+    <color name="colorPrimaryDark">#009CD6</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="bgBottomNavigation">#fff</color>
     <color name="curious_blue">#009be3</color>
     <color name="oslo_gray">#888c91</color>
     <color name="monsoon">#8a838a</color>
-
+    <color name="border_color">#DEDEDE</color>
     <color name="color1">#03A9F4</color>
     <color name="color2">#3F51B5</color>
     <color name="color3">#131313</color>
