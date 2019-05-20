@@ -2,11 +2,12 @@
     <string name="app_name">Job Khujon</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_job">Jobs</string>
+    <string name="title_invoice">Invoice List</string>
     <string name="title_profile">Profile</string>
-    <string name="fast_smart"><![CDATA[Fast & Smart]]></string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
