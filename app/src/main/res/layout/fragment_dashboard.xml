@@ -6,16 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/image2"
     android:orientation="vertical"
-    android:weightSum="10"
     tools:context=".fragment.Dashboard">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2">
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -23,9 +22,18 @@
             android:textColor="@android:color/white"
             android:textSize="34sp"
             android:textStyle="bold" />
+        <ListView
+            android:id="@+id/category_list"
+            android:layout_below="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:scrollbars="none" />
     </RelativeLayout>
 
-    <GridLayout
+    <!--<GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
@@ -35,8 +43,8 @@
         android:padding="14dp"
         android:rowCount="3">
 
-        <!--Row 1-->
-        <!--Col 1-->
+        &lt;!&ndash;Row 1&ndash;&gt;
+        &lt;!&ndash;Col 1&ndash;&gt;
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -73,8 +81,8 @@
 
 
         </android.support.v7.widget.CardView>
-        <!--Row 2-->
-        <!--Col 2-->
+        &lt;!&ndash;Row 2&ndash;&gt;
+        &lt;!&ndash;Col 2&ndash;&gt;
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -111,8 +119,8 @@
 
 
         </android.support.v7.widget.CardView>
-        <!--Row 3-->
-        <!--Col 3-->
+        &lt;!&ndash;Row 3&ndash;&gt;
+        &lt;!&ndash;Col 3&ndash;&gt;
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -149,8 +157,8 @@
 
 
         </android.support.v7.widget.CardView>
-        <!--Row 4-->
-        <!--Col 4-->
+        &lt;!&ndash;Row 4&ndash;&gt;
+        &lt;!&ndash;Col 4&ndash;&gt;
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -187,8 +195,8 @@
 
 
         </android.support.v7.widget.CardView>
-        <!--Row 5-->
-        <!--Col 5-->
+        &lt;!&ndash;Row 5&ndash;&gt;
+        &lt;!&ndash;Col 5&ndash;&gt;
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -225,8 +233,8 @@
 
 
         </android.support.v7.widget.CardView>
-        <!--Row 6-->
-        <!--Col 6-->
+        &lt;!&ndash;Row 6&ndash;&gt;
+        &lt;!&ndash;Col 6&ndash;&gt;
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -265,7 +273,9 @@
         </android.support.v7.widget.CardView>
 
 
-    </GridLayout>
+    </GridLayout>-->
+
+
 
 
 </LinearLayout>
